@@ -12,6 +12,10 @@ const appRoutes: Routes = [
     path: 'login',
     loadChildren: () => import('./modules/login/login.module').then(login => login.LoginModule)
   },
+  // {
+  //   path: 'home',
+  //   loadChildren: () => import ('./modules/home/home.module').then(home => home.HomeModule)
+  // },
   {
     path: '**',
     component: PaginaNaoEncontradaComponent
