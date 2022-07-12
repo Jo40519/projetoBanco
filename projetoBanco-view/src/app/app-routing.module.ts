@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PaginaNaoEncontradaComponent } from './layouts/pages/paginaNaoEncontrada/paginaNaoEncontrada.component';
 
 const appRoutes: Routes = [
   {
@@ -10,6 +11,10 @@ const appRoutes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./modules/login/login.module').then(login => login.LoginModule)
+  },
+  {
+    path: '**',
+    component: PaginaNaoEncontradaComponent
   }
 ];
 

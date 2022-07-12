@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,6 @@ export class LoginComponent implements OnInit {
 
 
   public formLogin!: FormGroup
-
 
   get name () {return this.formLogin.get('name')}
   get password () {return this.formLogin.get('password')}
@@ -37,7 +37,15 @@ export class LoginComponent implements OnInit {
 
   login() {
     if(!this.validarCamposObrigatorios()) {
-      alert('Campos obrigatórios não preenchidos')
+      Swal.fire({
+        title:'Atenção!',
+        text: 'Campos Obrigatórios não Preenchidos!',
+        icon: 'warning',
+        confirmButtonText:'OK',
+        confirmButtonColor: '#EA4335'
+      })
     }
+
+
   }
 }

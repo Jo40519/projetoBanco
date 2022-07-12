@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PaginaNaoEncontradaComponent } from './layouts/pages/paginaNaoEncontrada/paginaNaoEncontrada.component';
+import { PaginaSemAutorizacaoComponent } from './layouts/pages/paginaSemAutorizacao/paginaSemAutorizacao.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaginaNaoEncontradaComponent,
+    PaginaSemAutorizacaoComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+  BrowserModule,
+    AppRoutingModule,
+    SweetAlert2Module
   ],
   providers: [],
   bootstrap: [AppComponent]
