@@ -11,8 +11,6 @@ import { homeRoutes } from './home.routes';
     RouterModule.forChild(homeRoutes)
   ],
   declarations: [
-    HomeComponent,
-    SidebarComponent
-  ]
+    HomeComponent  ]
 })
 export class HomeModule { }

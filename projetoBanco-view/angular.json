@@ -34,13 +34,26 @@
               "src/assets"
             ],
             "styles": [
+              "./src/assets/scss/main.scss",
+              "./node_modules/admin-lte/dist/css/adminlte.min.css",
+              "./node_modules/admin-lte/plugins/fontawesome-free/css/all.css",
+              "./node_modules/primeicons/primeicons.css",
+              "./node_modules/primeng/resources/themes/nova-light/theme.css",
+              "./node_modules/primeng/resources/primeng.min.css",
+              "./src/assets/scss/admin-lte-custom.scss",
+              "./src/assets/scss/prime-ng-auto-complete-custom.scss",
+              "./src/assets/scss/prime-ng-step-custom.scss",
+              "./src/assets/scss/prime-ng-slider-custom.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js",
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/popper.js/dist/umd/popper.js"
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/admin-lte/plugins/jquery/jquery.min.js",
+              "node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "node_modules/admin-lte/dist/js/adminlte.js"
             ]
           },
           "configurations": {

@@ -7,17 +7,25 @@ import { PaginaNaoEncontradaComponent } from './layouts/pages/paginaNaoEncontrad
 import { PaginaSemAutorizacaoComponent } from './layouts/pages/paginaSemAutorizacao/paginaSemAutorizacao.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { SidebarComponent } from './layouts/components/sidebar/sidebar.component';
+import { NavBarComponent } from './layouts/components/navBar/navBar.component';
+import { FooterComponent } from './layouts/components/footer/footer.component';
+import { SharedModule } from './shared/shared.module';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
     PaginaNaoEncontradaComponent,
-    PaginaSemAutorizacaoComponent
+    PaginaSemAutorizacaoComponent,
+    SidebarComponent,
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
   BrowserModule,
     AppRoutingModule,
+    SharedModule.forRoot(),
+    NgxMaskModule.forRoot(),
     SweetAlert2Module
   ],
   providers: [],

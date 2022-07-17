@@ -4,11 +4,6 @@ import { HomeComponent } from "./home.component";
 export const homeRoutes: Routes = [
   {
     path:'',
-    children: [
-      {
-        path: 'home',
-        component: HomeComponent
-      }
-    ]
+    component: HomeComponent
   }
 ]
