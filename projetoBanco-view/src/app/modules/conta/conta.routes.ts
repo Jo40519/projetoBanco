@@ -4,11 +4,6 @@ import { ConsultarContasComponent } from "./consultarContas/consultarContas.comp
 export const contaRouter : Routes = [
   {
     path: '',
-    children: [
-      {
-        path: '',
-        component: ConsultarContasComponent
-      }
-    ]
+    component: ConsultarContasComponent
   }
 ]

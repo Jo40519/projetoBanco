@@ -19,7 +19,7 @@ export class PaginaNaoEncontradaComponent implements OnInit {
       confirmButtonText: 'Ok',
       confirmButtonColor: '#EA4335'
     }).then(ok => {
-      this.routerService.navigate(['./login'])
+      this.routerService.navigate(['./home'])
     })
 
   }

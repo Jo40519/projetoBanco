@@ -17,6 +17,10 @@ const appRoutes: Routes = [
     loadChildren: () => import ('./modules/home/home.module').then(home => home.HomeModule)
   },
   {
+    path: 'conta',
+    loadChildren: () => import ('./modules/conta/conta.module').then(home => home.ContaModule)
+  },
+  {
     path: '**',
     component: PaginaNaoEncontradaComponent
   }

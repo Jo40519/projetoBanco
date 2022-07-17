@@ -1,9 +1,12 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedComponent } from './shared.component';
 import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
+import { CustomAlertComponent } from './components/custom-alert/custom-alert.component';
+import { LoadingCustomComponent } from './components/loading-custom/loading-custom.component';
+import { PaginatorCustomComponent } from './components/paginator-custom/paginator-custom.component';
+import { TableCustomComponent } from './components/table-custom/table-custom.component';
 
 @NgModule({
   imports: [
@@ -20,7 +23,12 @@ import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
       tertiaryColour: '#dc3545'
     })
   ],
-  declarations: [SharedComponent]
+  declarations: [
+    CustomAlertComponent,
+    LoadingCustomComponent,
+    PaginatorCustomComponent,
+    TableCustomComponent
+  ]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders <any> {
