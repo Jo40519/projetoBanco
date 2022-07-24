@@ -19,7 +19,8 @@ import { NgxMaskModule } from 'ngx-mask';
     PaginaSemAutorizacaoComponent,
     SidebarComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent
   ],
   imports: [
   BrowserModule,

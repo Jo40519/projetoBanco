@@ -4,11 +4,13 @@ import { HomeComponent } from './home.component';
 import { SidebarComponent } from 'src/app/layouts/components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { homeRoutes } from './home.routes';
+import {SidebarModule} from 'primeng/sidebar';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(homeRoutes)
+    RouterModule.forChild(homeRoutes),
+    SidebarModule
   ],
   declarations: [
     HomeComponent  ]
